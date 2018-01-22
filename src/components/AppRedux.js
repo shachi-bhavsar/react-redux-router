@@ -7,11 +7,13 @@ import {App} from './App'
 
 const store = createStore(DisplayApp)
 
-const AppRedux = render(
-  <Provider store={store}>
-    <App/>
-  </Provider>,
-  document.getElementById('root')
+const AppRedux = () => (
+  
+    <Provider store={store}>
+      <App/>
+    </Provider>
+    
 )
-
 export default AppRedux
+
+
