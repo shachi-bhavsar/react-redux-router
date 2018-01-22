@@ -5,7 +5,7 @@ import Home from './Home'
 import Roster from './Roster'
 
 const AppRoute = () => (
-    <div style = {styles.content}>
+    <div>
       <BrowserRouter>
         <div style={styles.wrapper}>
               <ul style={styles.header}>
@@ -35,11 +35,13 @@ const styles = {
   },
   header: {
       backgroundColor: '#23cf45',
+      width: 80
   },
   content: {
     backgroundColor: '#FFCC00',
     width: 600,
     display: 'flex', 
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginLeft: 20
   }
 }
