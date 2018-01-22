@@ -1,15 +1,10 @@
 import React from 'react'
 import AppRedux from './components/AppRedux';
 import AppRoute from './components/AppRoute';
+import ReactDOM from 'react-dom';
+import Root from './components/Root'
 
-export class Test extends React.Component{	
-	render(){
-		return (
-			<div>
-				<AppRedux/>	  
-				<AppRoute/>
-		  </div>,
-			document.getElementById('root')
-		)
-	}
-}
+ReactDOM.render(
+	<Root/>, 
+	document.getElementById("root")
+  );
